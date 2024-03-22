@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>CineSite</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class = "bg-sky-200">
+    <header>
+        <h1 style = "text-align: center;" class = "text-5xl font-serif">CineSite</h1>
+    </header>
+    <article>
+        <h1 style = "text-align: center;" class = "text-3xl font-serif font-semibold">Oscars 2024</h1>
+        <p class = "text-green-800">Nominations of my favourite films this year.</p>
+    </article>
+    <div style = "justify-content: center;" class="flex flex-auto">
+    <table style = "width: 50%; text-align: center;" class = "bg-blue-300 table-auto" >
+        <caption class = "bg-blue-500"><strong>Oscars 2024 Nominations</strong></caption>
+        <thead>
+        <tr style="padding: 20px;">
+            <th class =>Film</th>
+            <th>Director</th>
+            <th >Year</th>
+            <th >Number of nominations</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class = "text-teal-500">Poor Things</td>
+            <td>Yorgos Lanthimos</td>
+            <td>2023</td>
+            <td>11</td> 
+        </tr>
+        <tr>
+            <td class = "text-red-500">Killers of the Flower Moon</td>
+            <td>Martin Scorsese</td>
+            <td>2023</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td class = "text-blue-600">Anatomy of a Fall</td>
+            <td>Justine Triet</td>
+            <td>2023</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td class = "text-gray-600">Zone of Interest</td>
+            <td>Jonathan Glazer</td>
+            <td>2023</td>
+            <td>5</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <article class = "bg-violet-400">
+        <h2 class = "text-lg ">Who I would like <em>most </em>to win</h2>
+        <ol style="list-style-type: upper-roman">
+            <li><strong>Killers of the Flower Moon</strong></li>
+            <li>Anatomy of a Fall</li>
+            <li>Poor Things</li>
+            <li>Zone of Interest</li>
+        </ol>
+   
+    </article>
+    
+    <p class = "bg-lime-300 flex flex-nowrap" style = "justify-content: center;">
+    <img src = "https://images.newrepublic.com/afe297f5956c1bd1bbe3da582b4bfed3837c9673.jpeg" alt = "Killers of the Flower Moon" width = "480" usemap="#killers">
+    <map name="killers">
+        <area shape="rect" coords="100,94,150,150" alt="Lily" href="https://en.wikipedia.org/wiki/Lily_Gladstone">
+        <area shape="rect" coords="200, 100, 250, 150" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+      </map>
+    </p>
+   <div class = " flex flex-row justify-between" >
+        <div >
+            <img src = "https://m.media-amazon.com/images/I/81VmFeud63L._AC_UF894,1000_QL80_.jpg" alt = "Poor Things" width = "200">
+        </div>
+        <div>
+            <img src = "https://images.savoysystems.co.uk/GCL/1625280.jpg" alt = "Zone of Interest Poster" width = "200">
+        </div>
+        <div>
+            <img src = "https://m.media-amazon.com/images/M/MV5BMDBiYmRkNjUtYzc4My00NGFiLWE2NWUtMGU1ZDA1NTQ3ZjQwXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_QL75_UY281_CR1,0,190,281_.jpg" alt = "Anatomy of a Fall" width = "200">
+        </div>
+        <div>
+            <img src = "https://miro.medium.com/v2/resize:fit:960/1*_7bkoH5VQChwOxLvfr9pNQ.jpeg" alt = "Killers of a Flower Moon Poster" width = "200">
+        </div>
+   </div>
+
+    <article class = "bg-blue-400">
+    <form>
+       <h1>Survey</h1>
+        <label for="Select film:">Who would you like to win?</label><br>
+        <select>
+            <optgroup>
+                <option value="Poor Things">Poor Things</option>
+                <option value="Killers of the Flower Moon">Killers of the Flower Moon</option>
+                <option value="Anatomy of a Fall">Anatomy of a Fall</option>  
+                <option value="Zone of Interest">Zone of Interest</option>
+            </optgroup>
+        </select>
+        <button type="submit" class = "bg-white hover:bg-slate-400">Submit</button>
+    </form> 
+    <label for="survey">Survey votes:</label>
+    <progress class = "animate-bounce" id="survey" value="323" max="1000"> 32% </progress> 
+    </article>
+    
+    <article>
+    <h1> Below some extra info</h1>
+        <details>
+        <summary>More Information</summary>
+        <p>This is some additional information about the Oscars 2024 nominations.</p>
+        <ul>
+            <li>The film "Poor Things" starred Emma Stone.</li>
+            <li>The film "Killers of the Flower Moon" starred Lily Gladstone.</li>
+            <li>The films "Anatomy of a Fall" and "Zone of Interest" both starred Sandra Huller.</li>
+        </ul>
+    </details>
+</article>
+
+    <footer>
+        <p>Posted by: CineSite</p>
+    </footer>
+</body>
+</html>
