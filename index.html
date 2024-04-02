@@ -5,15 +5,16 @@
 <link href="./output.css" rel="stylesheet">
 </head>
 <body class = "bg-orange-50">
+    <div id = "mainpage">
     <header>
         <h1 style = "text-align: center;" class = "text-5xl font-serif">CineSite</h1>
     </header>
     <article>
         <h1 class = "text-3xl font-serif font-semibold text-center">Oscars 2024</h1>
-        <p class = "text-green-800">Nominations of my favourite films this year.</p>
+        <p class = "text-green-800 text-center font-serif text-xl">Nominations of my favourite films this year.</p>
     </article>
     <div class="flex flex-auto justify-center">
-    <table style = "width: 50%;" class = " table-auto text-center border-solid border-4 border-x-slate-900">
+    <table style = "width: 50%;" class = " table-auto text-center border-solid border-4 border-slate-900">
         <caption class = "bg-"><strong>Oscars 2024 Nominations</strong></caption>
         <thead>
         <tr>
@@ -25,7 +26,7 @@
         </thead>
         <tbody>
         <tr>
-            <td class = "text-teal-500">Poor Things</td>
+            <td class = "text-green-700">Poor Things</td>
             <td>Yorgos Lanthimos</td>
             <td>2023</td>
             <td>11</td> 
@@ -43,7 +44,7 @@
             <td>5</td>
         </tr>
         <tr>
-            <td class = "text-gray-600">Zone of Interest</td>
+            <td class = "text-orange-500">Zone of Interest</td>
             <td>Jonathan Glazer</td>
             <td>2023</td>
             <td>5</td>
@@ -51,9 +52,9 @@
         </tbody>
     </table>
     </div>
-    
-    <article class = "bg-violet-400">
-        <h2 class = "text-lg ">Who I would like <em>most </em>to win</h2>
+    <div class="flex bg-violet-400">
+    <article class="m-auto">
+        <h2 class = "text-lg">Who I would like <em>most </em>to win</h2>
         <ol style="list-style-type: upper-roman">
             <li><strong>Killers of the Flower Moon</strong></li>
             <li>Anatomy of a Fall</li>
@@ -62,6 +63,7 @@
         </ol>
    
     </article>
+    </div>
     
     <p class = "bg-lime-300 flex flex-nowrap" style = "justify-content: center;">
     <img src = "https://images.newrepublic.com/afe297f5956c1bd1bbe3da582b4bfed3837c9673.jpeg" alt = "Killers of the Flower Moon" width = "480" usemap="#killers">
@@ -105,7 +107,7 @@
     </article>
     
     <article>
-    <h1> Below some extra info</h1>
+    <h1> Below some extra info!</h1>
         <details>
         <summary>More Information</summary>
         <p>This is some additional information about the Oscars 2024 nominations.</p>
@@ -116,9 +118,13 @@
         </ul>
     </details>
 </article>
+</div>
 
-    <footer>
-        <p>Posted by: CineSite</p>
-    </footer>
+
+
+<footer id = "footer">
+<p>Posted by: CineSite</p>
+</footer>
+
 </body>
 </html>

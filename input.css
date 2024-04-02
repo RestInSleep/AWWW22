@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "sidebar mainpage mainpage"
+        "sidebar mainpage mainpage"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    }
+    
+body > #sidebar {
+    grid-area: sidebar;
+    }
+
+body > #mainpage {
+    grid-area: mainpage;
+    background-color: #ff8c8c;
+}
+body > #footer {
+    grid-area: footer;
+   
+}
