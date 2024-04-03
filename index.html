@@ -5,7 +5,31 @@
 <link href="./output.css" rel="stylesheet">
 </head>
 <body class = "bg-orange-50">
-    <div id = "mainpage">
+    <div id = "sidebar" >
+       <div id = "images" class = "justify-center">
+        <header class = "text-3xl flex flex-row justify-center">
+        TO są bardzo znani aktorzy! A w dodatku w fleksie!
+       </header>
+       <div  class = "flex  flex-wrap flex-row">
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Ky5bHLymMQYKEkAYQSbNIkpluxrvuuZPwhaHDtuYXA&s alt = "Leonardo " width = "200" class = "flex-auto">
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToYU_Bi4FJTe_Oslwx30WFaJY7NuOT9yufDxDnctCx_A&s alt = "Adam " width = "150" class = " flex-auto">
+        <img src = "https://assets.popbuzz.com/2020/46/everything-you-need-to-know-about-anya-taylor-joy-1605546765-view-0.jpg" alt = "Anya " width = "200" class = "flex-none">
+        </div>
+        </div>
+       <div class = "images2">
+        <h2 class = "text-2xl flex justify-center">
+            A tutaj flex col!
+        </h2>
+        <div  class = "flex  flex-col flex-wrap flex-auto">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Ky5bHLymMQYKEkAYQSbNIkpluxrvuuZPwhaHDtuYXA&s alt = "Leonardo " width = "200" class = "flex-row">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToYU_Bi4FJTe_Oslwx30WFaJY7NuOT9yufDxDnctCx_A&s alt = "Adam " width = "150" class = "flex-row">
+            <img src = "https://assets.popbuzz.com/2020/46/everything-you-need-to-know-about-anya-taylor-joy-1605546765-view-0.jpg" alt = "Anya " width = "200" class = "flex-row">
+        </div>
+            
+        </div>
+    </div>
+    
+    <div id = "mainpage" class = "bg-blue-200">
     <header>
         <h1 style = "text-align: center;" class = "text-5xl font-serif">CineSite</h1>
     </header>
@@ -52,7 +76,7 @@
         </tbody>
     </table>
     </div>
-    <div class="flex bg-violet-400">
+    <div class="flex bg-violet-100">
     <article class="m-auto">
         <h2 class = "text-lg">Who I would like <em>most </em>to win</h2>
         <ol style="list-style-type: upper-roman">
@@ -65,12 +89,13 @@
     </article>
     </div>
     
-    <p class = "bg-lime-300 flex flex-nowrap" style = "justify-content: center;">
-    <img src = "https://images.newrepublic.com/afe297f5956c1bd1bbe3da582b4bfed3837c9673.jpeg" alt = "Killers of the Flower Moon" width = "480" usemap="#killers">
+    <p class = "bg-lime-300 flex justify-center text-2xl">
+        <label for = "mapka" class="justify-center">Mapa!</label>
+    <img src = "https://images.newrepublic.com/afe297f5956c1bd1bbe3da582b4bfed3837c9673.jpeg" id = "mapka" alt = "Killers of the Flower Moon" class = "flex-initial shadow-2xl" width="500" usemap="#killers">
     <map name="killers">
         <area shape="rect" coords="100,94,150,150" alt="Lily" href="https://en.wikipedia.org/wiki/Lily_Gladstone">
-        <area shape="rect" coords="200, 100, 250, 150" alt="Phone" href="phone.htm">
-        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+        <area shape="rect" coords="200, 100, 250, 150" alt="Phone" href="https://pl.wikipedia.org/wiki/Robert_De_Niro">
+        <area shape="rect" coords="300, 100, 350, 150" alt="Leo" href="https://pl.wikipedia.org/wiki/Leonardo_DiCaprio">
       </map>
     </p>
    <div class = " flex flex-row justify-between" >
@@ -92,6 +117,11 @@
     <form>
        <h1>Survey</h1>
         <label for="Select film:">Who would you like to win?</label><br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="First name"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="Last name"><br><br>
+        
         <select>
             <optgroup>
                 <option value="Poor Things">Poor Things</option>
@@ -103,7 +133,7 @@
         <button type="submit" class = "bg-white hover:bg-slate-400">Submit</button>
     </form> 
     <label for="survey">Survey votes:</label>
-    <progress class = "animate-bounce" id="survey" value="323" max="1000"> 32% </progress> 
+    <progress class = "animate-ping" id="survey" value="323" max="1000"> 32% </progress> 
     </article>
     
     <article>
